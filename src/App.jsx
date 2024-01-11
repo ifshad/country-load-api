@@ -11,14 +11,18 @@ const App = () => {
       .then(data => setCountires(data))
       .catch(error => console.log(error))
   }, [])
-  
+
   // console.log(country);
   return (
     <div className="min-h-screen flex justify-center items-center text-center">
       <div>
+      <h2>Total Country: {countries.length}</h2>
         {
           countries.map(
-            country => <h3 key={country.cca2}>{country.name.common}</h3>
+            (country , index) => 
+            <div key={country.cca2}>
+              <p>{`${index+1}.${country.name.common}`}</p>
+            </div>
           )
         }
       </div>
