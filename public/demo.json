@@ -1,0 +1,18 @@
+{
+    "persons": [
+        {
+            "id": 1,
+            "name": "Ifshad",
+            "age": "25",
+            "gender": "male",
+            "color": "brown"
+        },
+        {
+            "id": 2,
+            "name": "Jarin",
+            "age": "21",
+            "gender": "female",
+            "color": "white"
+        }
+    ]
+}
