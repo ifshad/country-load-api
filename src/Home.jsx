@@ -12,7 +12,7 @@ const Home = () => {
         .catch(error => console.log(error))
     },[])
     return (
-        <div className="min-h-screen flex justify-center items-center text-2xl font-semibold gap-6 text-center border border-cyan-500 rounded">
+        <div className="min-h-screen flex justify-center items-center text-2xl font-semibold gap-6 text-center ">
             {
                 name.map(user => <User user={user} key={user.id}></User>)
             }  
